@@ -1,0 +1,16 @@
+<template>
+<div style="background-color: yellow; border:cyan"> 
+<div> To test the Conditional Rendering</div>
+<lightning-input type="checkbox" onchange={checkVale}></lightning-input>
+<template if:false={showMessage}>
+<div>
+    You selected the False
+</div>
+</template>
+<template if:true={showMessage}>
+    <div>
+        You selected the True
+    </div>
+</template>
+</div>
+</template>
